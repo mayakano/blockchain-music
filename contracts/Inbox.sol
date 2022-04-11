@@ -1,4 +1,8 @@
 pragma solidity ^0.8.0;
+// SPDX-License-Identifier: MIT
+
+
+
 
 
 contract Inbox{
@@ -14,7 +18,7 @@ contract Inbox{
     _;
     }
     // An empty constructor that creates an instance of the contract
-    constructor() public{}
+    // constructor() public{}
     //takes in receiver's address and IPFS hash. Places the IPFSadress in the receiver's inbox
     function sendIPFS(string memory _address, string memory _ipfsHash) notFull(ipfsInbox[_address]) public{
         ipfsInbox[_address] = _ipfsHash;
