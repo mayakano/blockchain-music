@@ -13,7 +13,7 @@ contract Inbox{
     require(stringTest.length==0);
     _;
     }
-    // An empty constructor that creates an instance of the conteact
+    // An empty constructor that creates an instance of the contract
     constructor() public{}
     //takes in receiver's address and IPFS hash. Places the IPFSadress in the receiver's inbox
     function sendIPFS(string memory _address, string memory _ipfsHash) notFull(ipfsInbox[_address]) public{
