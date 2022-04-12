@@ -1,4 +1,5 @@
-var IPFSInbox = artifacts.require("./Inbox.sol");
+var Inbox = artifacts.require("./Inbox.sol");
+
 module.exports = function (deployer) {
-  deployer.deploy(IPFSInbox);
+  deployer.deploy(Inbox);
 };
